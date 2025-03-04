@@ -10,6 +10,7 @@ Haz dos variantes de la solución describiendo el paso a paso de cada una de ell
 let desde = parseInt(prompt("Desde que número desea empezar: "))
 let hasta = parseInt(prompt("Hata que número desea recorrer: "))
 
+let num = desde;
 
 function imprimirNumeros(desde, hasta) {
   setTimeout(function imprimir(numero) {
@@ -20,7 +21,7 @@ function imprimirNumeros(desde, hasta) {
   },1000, desde);
 }
 console.log("setTimeout:");
-imprimirNumeros(desde, hasta);
+imprimirNumeros(num, hasta);
 
 function imprimirNumeros2(desde, hasta) {
   let idInterval = setInterval(() => {
@@ -34,6 +35,6 @@ function imprimirNumeros2(desde, hasta) {
 setTimeout(() => {
   console.log("\nsetInterval:");
   imprimirNumeros2(desde, hasta);
-}, (hasta - desde) * 1000);
+}, ((hasta + 1) - (desde - 1)) * 1000);
 
 
