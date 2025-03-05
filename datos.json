@@ -1,0 +1,27 @@
+[
+  {
+    "cedula": 1001234567,
+    "nombre": "Carlos",
+    "edad": 25,
+    "ciudad": "Bucaramanga" },
+  {
+    "cedula": 1002345678,
+    "nombre": "Ana",
+    "edad": 30,
+    "ciudad": "Medellín" },
+  {
+    "cedula": 1003456789,
+    "nombre": "Luis",
+    "edad": 22,
+    "ciudad": "Cali" },
+  {
+    "cedula": 1004567890,
+    "nombre": "María",
+    "edad": 28,
+    "ciudad": "Cartagena" },
+  {
+    "cedula": 1005678901,
+    "nombre": "Javier",
+    "edad": 35,
+    "ciudad": "Barranquilla" }
+]
