@@ -8,12 +8,21 @@ const promesas = (a, callback) => {
     setTimeout(() => {
       resolve(a);
     }, 1000);
-  }).then(callback)
-    .then(callback)
-    .then(callback);
+  }).then((valor) => 
+    new Promise((resolve, reject) => 
+      setTimeout(() => resolve(callback(valor)), 1000))
+  ).then((valor) => 
+    new Promise((resolve, reject) => 
+      setTimeout(() => resolve(callback(valor)), 1000))
+  ).then((valor) => 
+    new Promise((resolve, reject) => 
+      setTimeout(() => resolve(callback(valor)), 1000))
+  );
 }
 
 promesas(2, sumar).then((final) => {
-  console.log(`Suma final: ${final}`);
+  setTimeout(() => {
+    console.log(`Suma final: ${final}`);
+  }, 1000);
 });
  
