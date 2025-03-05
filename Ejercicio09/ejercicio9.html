@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 9</title>
+    <script src="ejercicio9.js"></script>
+</head>
+<body>
+    <h1>Ejercicio 9</h1>
+    <p>¿Cuál es el resultado del código a continuación?</p>
+    <p>let i = 0;</p>
+
+        <p>setTimeout(() => alert(i), 100); //?</p>
+        <p>for(let j = 0; j < 1000_000_000; j++) i++;</p>
+        <p>setTimeout(() => {</p>
+        <p>    alert("La función se ejecuta despues del bucle OPCION A porque este ingresó al event loop y hasta que no se complete las demas tareas no sale de él.")</p>
+        <p>    alert("El alert() muestra el número hasta donde llegó el bucle ya que la varaible i iba aumentando con el bucle de 1 en un 1.")</p>
+        <p>}, 100);</p>
+    </p>
+</body>
+</html>
