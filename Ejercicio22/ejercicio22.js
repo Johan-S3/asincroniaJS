@@ -4,8 +4,8 @@ const persona = {};
 // Defino un manejador (handler) que interceptará las operaciones en el Proxy, 
 // es decir, cuando se agreguen o modifiquen propiedades en el objeto.
 let handler = {
+    // El método set se ejecuta cada vez que se intente modificar o agregar una propiedad al objeto.
     set: function(obj, prop, value) { 
-        // El método set se ejecuta cada vez que se intente modificar o agregar una propiedad al objeto.
         obj[prop] = value; // Asigna el valor a la propiedad dentro del objeto original.
         return true; // Es necesario devolver true para evitar errores en modo estricto.
     }
