@@ -2,7 +2,7 @@
 function map(array, callback) {
     // Declaro e asigno a una variable un arreglo vacio.
     let newArray = [];
-    // Por medio de un bucle for recorro cada elemento del arreglo recibido y lo agrego al arreglo creado
+    // Por medio de un bucle for recorro cada elemento del arreglo recibido y le agrego el valor que retorna la callback pasandole como argumento el valor del arreglo en esa iteración.
     for (let i = 0; i < array.length; i++) {
         newArray.push(callback(array[i]));
     }
